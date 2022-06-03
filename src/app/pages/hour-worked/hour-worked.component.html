@@ -1,0 +1,23 @@
+<div class="service-report">
+  <div class="service-report__content service-report__content--left">
+    <app-form-hour-worked (query)="getServiceConsult($event)"></app-form-hour-worked>
+  </div>
+  <div class="service-report__content service-report__content--right">
+        <table class="table" *ngIf="dataSource.length">
+          <thead>
+            <tr>
+              <th scope="col">Resultados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of dataSource">
+              <td>{{item.resultado}}</td>
+            </tr>
+      </tbody>
+      <button mat-raised-button color="primary" (click)="eliminar()">
+        Eliminar
+      </button>
+    </table>
+  </div>
+</div>
+

@@ -1,0 +1,15 @@
+<form class="example-form">
+  <h2>Ingresar Numero</h2>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Ingrese numero uno</mat-label>
+    <input matInput type="number" name="idTechnical" [(ngModel)]="service.n1"/>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Ingrese numero dos</mat-label>
+    <input matInput type="number" name="idService" [(ngModel)]="service.n2"/>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="register()">
+    Registrar
+  </button>
+</form>
